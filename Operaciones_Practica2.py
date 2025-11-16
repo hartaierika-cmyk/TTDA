@@ -7,3 +7,7 @@ def caluclaRatio(df, col1, col2):
     if (ratio > 1).any():
         raise Exception("Algún valor del ratio es mayor que 1.")
     return ratio
+
+def rango_ventas(col):
+    return col.max() - col.min()
+    
